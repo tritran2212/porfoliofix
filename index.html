@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- .ico -->
+    <!-- link:favicon -->
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.png"
+      type="image/png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/font.css" />
+    <link rel="stylesheet" href="./src/reset.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+
+    <!-- <link rel="stylesheet" href="./src/demo.css"> -->
+    <link rel="stylesheet" href="./src/header.css" />
+    <link rel="stylesheet" href="./src/hero.css" />
+    <link rel="stylesheet" href="./src/about.css" />
+    <link rel="stylesheet" href="./src/services.css" />
+    <link rel="stylesheet" href="./src/skills.css" />
+    <link rel="stylesheet" href="./src/resume.css" />
+    <link rel="stylesheet" href="./src/porfolios.css" />
+    <link rel="stylesheet" href="./src/reviews.css" />
+    <link rel="stylesheet" href="./src/blog.css" />
+    <link rel="stylesheet" href="./src/contact.css" />
+    <link rel="stylesheet" href="./src/footer.css" />
+  </head>
+  <body>
+      <header>
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#">
+            <img src="./public/img/logo.png" alt="logo" />
+          </a>
+
+          <div class="header__right">
+            <nav>
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <div class="right__dive"></div>
+
+            <div class="header__phone">
+              <i class="fa-solid fa-phone"></i>
+              <p class="phone__text">+1 971 234 1508</p>
+            </div>
+          </div>
+
+          <button onclick="hamburger(event)" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <nav class="mobi__nav">
+            <div class="container">
+              <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header> 
+
+    <section id="hero">
+            <div class="container">
+              <div class="hero__wrapper">
+                <img src="./public/img/section/hero-img.jpg" width="180" height="180" alt="">
+              <h1 class="hero___title">Hi,I am <span class="title__name">Jhon Doe</span>
+              </h1>
+              <p class="hero__desc">I am a fondend web developer .I can provide clean code and pixel  perfect design. <br class="desc__break">
+                I Also  make website more & more interactivw with web animations
+              </p>
+              <div class="hero__social">
+                <a href="#" class="st-social-btn active">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="st-social-btn ">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="st-social-btn ">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              </div>
+            </div>
+    </section>  
+    <section id="about"></section>
+    <section id="services">
+         <div class="container">
+             <div class="services__wrapper">
+               <h2  class="services__title">
+                SERVICES
+                <span class="title__placeholder">SERVICES</span>
+         
+              </h2>
+                
+             </div>
+         </div>
+    </section>
+    <section id="skills"></section>
+    <section id="resume"></section>
+    <section id="porfolios"></section>
+    <section id="reviews"></section>
+    <section id="blog"></section>
+    <section id="contact"></section>
+
+    <footer></footer>
+
+    <script>
+      function hamburger(event) {
+        event.currentTarget.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

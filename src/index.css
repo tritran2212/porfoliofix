@@ -1,0 +1,50 @@
+:root{
+    --clr-primary:#fec544;
+    --clr-secondary:#a9adb8;
+}
+
+html {
+    /* Nếu như mặc định là 16px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 114rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 96rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 72rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 54rem;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .container {
+        max-width: unset;
+    }
+}
+
+.title__name{
+    color:var(--clr-primary);
+}

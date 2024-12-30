@@ -1,0 +1,144 @@
+:root {
+    --height-header: 8rem;
+    --gap-item: 4rem;
+}
+
+header {
+    background-color: rgba(7, 13, 27, 0.9);
+
+    /* position: relative; */
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: var(--height-header);
+    line-height: var(--height-header);
+}
+
+.header__right {
+    display: flex;
+    gap: var(--gap-item);
+
+    align-items: center;
+}
+
+.header__right ul {
+    display: flex;
+    list-style: none;
+    gap: var(--gap-item);
+    padding: 0;
+}
+
+.header__right nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header__right nav a.active {
+    color: #fec544;
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone__text {
+    margin-left: 1.5rem;
+    color: #fec544;
+}
+
+.header__phone i {
+    color: white;
+}
+
+.right__dive {
+    height: 1.4rem;
+    width: .2rem;
+    background-color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .header__wrapper {
+        flex-direction: column;
+
+        align-items: unset;
+        line-height: unset;
+
+        justify-content: space-evenly;
+    }
+}
+
+.hamburger {
+    display: none;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .header__right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header__wrapper {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header .container {
+        max-width: unset;
+    }
+
+    header {
+        background-color: #070d1b;
+    }
+}
+
+.mobi__nav {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    right: 0;
+    left: 0;
+
+    background-color: #070d1b;
+
+    border-top: 1px solid #101624;
+    border-bottom: 1px solid #101624;
+}
+
+.mobi__nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mobi__nav ul a {
+    color: rgb(169, 173, 184);
+    text-decoration: none;
+
+    display: inline-block;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.hamburger.active+.mobi__nav {
+    display: block;
+}

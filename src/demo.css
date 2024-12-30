@@ -1,0 +1,55 @@
+h1 {
+    background-color: blue;
+    color: white;
+    font-size: 6rem;
+}
+
+
+/**
+* code cho màn hình nhỏ hơn 800px
+*/
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 5rem;
+        background-color: black;
+    }
+}
+
+/**
+* code cho màn hình nhỏ hơn 400px
+*/
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 4rem;
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1999.8px) {
+    h1 {
+        font-size: 4rem;
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        background-color: green;
+    }
+}
+
+/* ------------- */
+@media print {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    div {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,19 @@
+.services__title{
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--clr-primary);
+    position: relative;
+    top: 2000px;
+    
+}
+.title__placeholder{
+    font-size: 9rem;
+     color: rgba(21,27,41,0.5); 
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+
+
